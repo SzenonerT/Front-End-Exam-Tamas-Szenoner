@@ -1,5 +1,5 @@
-import {countDifferentLetters} from './task.js'
+import { getLongestBookByAuthorName } from './task.js';
+import { authors, books } from './data.js'
 
-const result = countDifferentLetters('Esperente is a boring language!')
-
+const result = getLongestBookByAuthorName(authors, books, "George Orwell")
 console.log(result);

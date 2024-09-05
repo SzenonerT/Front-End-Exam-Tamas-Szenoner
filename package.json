@@ -1,10 +1,11 @@
 {
-  "name": "task2",
+  "name": "task",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "task2.js",
+  "main": "task.js",
+  "type":"module",
   "scripts": {
+    "start":"playground.js",
     "test": "node --test"
   },
   "keywords": [],
