@@ -1,0 +1,79 @@
+body{
+
+    font-family: "Libre Baskerville", serif;
+    color: #45171d;
+    background-color:#f9f5f0 ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display:  flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+
+}
+
+.container{
+
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem auto 0 auto;
+    padding: 0 1 rem;
+    
+}
+header{
+
+    text-align:center;
+    padding-bottom:  1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+headert h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.main-content{
+    margin: 1rem 0;
+}
+article{
+    margin-bottom: 1rem;
+}
+
+article h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+article p.info{
+    font-style: italic;
+    margin: 0,5 rem 0;
+
+}
+
+article p.description{
+    margin: 1 rem 0;
+    line-height: 1.25rem;
+}
+
+footer{
+    text-align: right;
+    padding-top: 1rem;
+    border-top: 1px solid black;
+
+}
+
+footer p{
+
+    font-style: italic;
+    margin: 0;
+}
+
+@media (max-width: 400px){
+    .main-content .description{
+        display: none;
+    }
+}
