@@ -1,38 +1,16 @@
-export function getLongestBookByAuthorName(authors, books, authorName) {
+export function countDifferentLetters(sentence) {
+    // make it case Sensitive the input:
+    const sentenceWord = sentence.toLowerCase()
 
-        const author = authors.find(item => item.name === authorName)
+     // collect the Unique letters:
+    const uniqueLetters = new Set();
 
+    for( const letter of sentenceWord){
+        if( letter >= 'a' && letter <= 'z'){
 
-            if(!author){
-            
-                return null;
-            }
-            
-        const bookList = books.filter(b => b.author_id === author.id)
-
-        if (bookList.length === 0){
-
-            return null;
+            uniqueLetters.add(letter)
         }
-        const longestBook = bookList.reduce((longest, current)=>{
-            if(current.pages > longest.pages){
-                
-    
-                return current;
-            }
-            else if(current.pages === longest.pages && current.title < longest.title){
 
-                return current;
-            }
-
-            return longest;
-        },bookList[0]);
-
-        return longestBook.title;
     }
-
-    
-
-
-        
-
+    return uniqueLetters.size
+}
